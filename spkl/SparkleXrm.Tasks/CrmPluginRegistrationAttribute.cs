@@ -116,8 +116,8 @@ public class CrmPluginRegistrationAttribute : Attribute
 }
 public enum ExecutionModeEnum
 {
-    Asynchronous,
-    Synchronous
+    Synchronous = 0,
+    Asynchronous = 1
 }
 public enum ImageTypeEnum
 {
@@ -228,9 +228,9 @@ public enum PluginStepOperationEnum
 }
 public enum StageEnum
 {
-    PreValidation= 10,
+    PreValidation = 10,
     PreOperation = 20,
-    PostOperation =40
+    PostOperation = 40
 }
 
 #endif
